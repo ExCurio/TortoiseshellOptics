@@ -81,6 +81,78 @@ nav {
 }
 
 
+/*Services Styling*/
+
+.services {
+	display: flex;
+	justify-content: center;
+}
+
+.service {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 8rem;
+	margin: 3rem;
+}
+
+.service-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.paper {
+	width: 3.5rem;
+}
+
+.ruler, .truck {
+	width: 5rem;
+}
+
+
+/*Offerings Styles*/
+
+.offerings {
+	display: flex;
+	justify-content: center;
+}
+
+.offering {
+	width: 35%;
+	margin-right: 5%;
+}
+
+.offering-title {
+	font-weight: bold;
+	background-color: cadetblue;
+	color: white;
+	width: 10rem;
+	padding-left: 1.25rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	margin-bottom: 1rem;
+}
+
+
+/*Footer Styles*/
+
+footer {
+	background-color: azure;
+	margin-top: 5rem;
+}
+
+.footer-logo {
+	display: flex;
+	align-items: center;
+	padding: 4rem;
+}
+
+.footer-logo img {
+	height: 1.5rem;
+	padding-right: 1rem;
+}
 
 
 
