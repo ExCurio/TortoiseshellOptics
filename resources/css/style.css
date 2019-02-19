@@ -11,16 +11,25 @@ html {
 
 .site-container {
 	max-width: 960px;
-	margin: 0 auto;
+	margin: auto;
 }
 
 h1, h3 {
 	font-weight: bold;
 }
 
-nav, span, p, div, ul, li, h1, h3, footer {
-	border: 1px solid black;
+@media only screen and (max-width: 1024px) {
+	.site-container {
+		width: 100%;
+	}
 }
+
+
+/*For Design and Troubleshooting*/
+
+/*nav, span, p, div, ul, li, h1, h3, footer {
+	border: 1px solid black;
+}*/
 
 
 /*Banner Styles*/
@@ -38,7 +47,8 @@ nav {
 	justify-content: space-between;
 	background-color: cadetblue;
 	color: white;
-	margin-top: 1rem;
+	position: relative;
+	top: 1rem;
 }
 
 .logo {
@@ -62,6 +72,10 @@ nav {
 	margin-bottom: 1rem;
 }
 
+.mobile-nav {
+	display: none;
+}
+
 .headline-main {
 	display: flex;
 	justify-content: flex-end;
@@ -80,6 +94,61 @@ nav {
 	line-height: 1.2;
 }
 
+@media only screen and (max-width: 1024px) {
+	.banner {
+		background-position: 20%;
+		height: 22rem;
+	}
+
+	nav {
+		top: 0;
+	}
+
+	.headline {
+		margin-top: 5rem;
+		margin-right: 2rem;
+	}
+
+	.headline h1 {
+		font-size: 1.33rem;
+		padding: 0.75rem 4rem;
+	}
+}
+
+@media only screen and (max-width: 470px) {
+	.banner {
+		height: 17rem;
+	}
+
+	.nav-list {
+		display: none;
+	}
+
+	.logo span {
+		display: none;
+	}
+
+	.mobile-nav {
+		display: block;
+		margin-bottom: 1rem;
+		margin-top: 1rem;
+		margin-right: 2rem;
+	}
+
+	.headline {
+		margin-top: 9rem;
+		margin-right: 0;
+		display: inline-block;
+		width: 100%;
+	}
+
+	.headline h1 {
+		font-size: 1rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		text-align: center;
+	}
+}
 
 /*Services Styling*/
 
@@ -111,6 +180,26 @@ nav {
 	width: 5rem;
 }
 
+@media only screen and (max-width: 470px) {
+	.services {
+		flex-direction: column;
+		margin-top: 2.23rem;
+		margin-bottom: 3.77rem;
+	}
+
+	.service {
+		justify-content: center;
+		height: auto;
+		margin-top: 1.54rem;
+		margin-bottom: 0;
+	}
+
+	.service-text {
+		font-size: 0.77rem;
+		margin-top: 1rem;
+	}
+}
+
 
 /*Offerings Styles*/
 
@@ -122,6 +211,7 @@ nav {
 .offering {
 	width: 35%;
 	margin-right: 5%;
+	margin-bottom: 5rem;
 }
 
 .offering-title {
@@ -135,12 +225,31 @@ nav {
 	margin-bottom: 1rem;
 }
 
+@media only screen and (max-width: 470px) {
+	.offerings {
+		flex-direction: column;
+	}
+
+	.offering {
+		width: 100%;
+		margin-bottom: 4rem;
+	}
+
+	.offering-title {
+		width: 100%;
+		text-align: center;
+	}
+
+	.offering-text {
+		font-size: 0.77rem;
+		padding-left: 0.5rem;
+	}
+}
 
 /*Footer Styles*/
 
 footer {
 	background-color: azure;
-	margin-top: 5rem;
 }
 
 .footer-logo {
@@ -154,7 +263,15 @@ footer {
 	padding-right: 1rem;
 }
 
+@media only screen and (max-width: 470px) {
+	.footer-logo {
+		justify-content: center;
+	}
 
+	.footer-logo span {
+		display: none;
+	}
+}
 
 
 
